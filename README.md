@@ -1,22 +1,24 @@
 
-Node.js 최신 LTS 버전 설치 : nvm install --lts
-Node.js 버전 확인인 : node -v
-설치된 LTS 버전 활성화 : nvm use lts
+- Node.js 최신 LTS 버전 설치 : nvm install --lts
+- Node.js 버전 확인인 : node -v
+- 설치된 LTS 버전 활성화 : nvm use lts
 
 
-vite 설치 : $ npm create vite@latest
+- vite 설치 : $ npm create vite@latest
     ✔ Project name: … project-vite
     ✔ Select a framework: > Vanilla
     ✔ Select a variant: > JavaScript
 
-프로젝트 폴더 이동 : cd project-vite
+- 프로젝트 폴더 이동 : cd project-vite
 
-npm install
+- npm install
 
-package.json 파일에 정의된 "dev" 스크립트를 실행 : npm run dev
+- package.json 파일에 정의된 "dev" 스크립트를 실행 : npm run dev
 
 
-ss
+- 모든 파일을 올려라 : git add .
+- 메세지 작성 : git commit -m "😇 커밋 성공"    
+- 깃에 올린다. : git push -u origin main   
 
 ## 프로젝트 실행
 - vite를 설치합니다. npm create vite@latest
@@ -24,13 +26,6 @@ ss
 - lenis를 설치합니다. npm install @studio-freight/lenis
 - vite를 설치 후 환경 설정을 합니다. vite.config.js파일을 만들고 다음과 같이 작성합니다.
 ```javascript
-export default {
-    root: "src",
-    build: {
-    outDir: "../public",
-    },
-};
-
 
 
 
