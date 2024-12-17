@@ -3,9 +3,9 @@ import { port } from "./port.js";
 import { link } from "./link.js";
 import { smooth } from "./smooth.js";
 
-window.addEventListener("load", function () {
-    smooth();
-    link();
+window.addEventListener("load", function(){
     menu();
     port();
+    link();
+    smooth();
 });
