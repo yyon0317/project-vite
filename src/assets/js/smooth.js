@@ -1,13 +1,13 @@
 import Lenis from "@studio-freight/lenis";
 
 export function smooth() {
-    const lenis = new Lenis({ 
+    const lenis = new Lenis({
         duration: 1,
-        easing: (t) => Math.min(1, 1.001 - Math.pow(1, -10 * t)),
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t))
     });
 
     function raf(time) {
-        lenis.raf(time);
+        lenis.raf(time)
         requestAnimationFrame(raf);
     }
 
@@ -15,5 +15,5 @@ export function smooth() {
 
     lenis.on("scroll", (e) => {
         console.log(e);
-    });
+    })
 }
